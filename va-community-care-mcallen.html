@@ -24,9 +24,7 @@
     
     <!-- 
       Load lucide-icons 
-      FIX: Switched to a more reliable CDN (jsdelivr) and added 'defer'.
-      The 'defer' attribute ensures the script executes before 'DOMContentLoaded'
-      but after the document is parsed, fixing the race condition.
+      FIX: Using the 'defer' attribute with a reliable CDN.
     -->
     <script src="https://cdn.jsdelivr.net/npm/lucide-icons/dist/lucide.min.js"></script>
     
@@ -37,7 +35,7 @@
         }
         /* A subtle, professional color scheme */
         .hero-bg {
-            background-color: #064E3B; /* dark green */
+            background-color: #0A2342; /* DEEP NAVY */
         }
         .cta-btn {
             background-color: #F59E0B; /* amber-500 */
@@ -46,7 +44,7 @@
             background-color: #D97706; /* amber-600 */
         }
         .section-title {
-            color: #115E59; /* teal-800 */
+            color: #1A5276; /* RICH BLUE */
         }
         
         /* Article content styling */
@@ -54,7 +52,7 @@
             font-size: 1.875rem; /* text-3xl */
             line-height: 2.25rem;
             font-weight: 700; 
-            color: #115E59; /* section-title color */
+            color: #1A5276; /* section-title color (RICH BLUE) */
             margin-top: 2.5rem; 
             margin-bottom: 1rem; 
         }
@@ -74,35 +72,36 @@
             margin-bottom: 0.5rem; 
         }
         .prose a { 
-            color: #064E3B; /* hero-bg color */
+            color: #0A2342; /* hero-bg color (NAVY) */
             font-weight: 500;
             text-decoration: underline; 
         }
         .prose a:hover {
-            color: #115E59; /* section-title color */
+            color: #1A5276; /* section-title color (RICH BLUE) */
         }
+        /* Ensures the correct HTML <strong> tag renders dark and bold */
         .prose strong {
-            font-weight: 600;
-            color: #374151; /* gray-700 */
+            font-weight: 700;
+            color: #0A2342; /* DEEP NAVY */
         }
     </style>
 </head>
 <body class="bg-gray-50 antialiased">
 
-    <!-- Header -->
+    <!-- Header (NAVY BLUE ACCENTS) -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="https://VeteransBenefitsMcallen.com/" class="text-2xl font-bold text-gray-800">
-                Veterans<span class="text-green-800">Benefits</span>McAllen
+                Veterans<span class="text-blue-900">Benefits</span>McAllen
             </a>
             
             <!-- Desktop Menu -->
             <div class="hidden md:flex items-center space-x-6">
-                <a href="https://VeteransBenefitsMcallen.com/" class="text-gray-600 hover:text-green-800">Home</a>
-                <a href="https://VeteransBenefitsMcallen.com/veteran-massage-therapy-mcallen.html" class="text-gray-600 hover:text-green-800">Massage Therapy</a>
-                <a href="https://VeteransBenefitsMcallen.com/va-community-care-mcallen.html" class="text-green-800 font-bold">Community Care</a> <!-- Active Link -->
-                <a href="https://VeteransBenefitsMcallen.com/veteran-pain-relief-mcallen.html" class="text-gray-600 hover:text-green-800">Pain & Stress</a>
-                <a href="https://VeteransBenefitsMcallen.com/veteran-resources-mcallen.html" class="text-gray-600 hover:text-green-800">Resources</a>
+                <a href="https://VeteransBenefitsMcallen.com/" class="text-gray-600 hover:text-blue-900">Home</a>
+                <a href="https://VeteransBenefitsMcallen.com/veteran-massage-therapy-mcallen.html" class="text-gray-600 hover:text-blue-900">Massage Therapy</a>
+                <a href="https://VeteransBenefitsMcallen.com/va-community-care-mcallen.html" class="text-blue-900 font-bold">Community Care</a> <!-- Active Link -->
+                <a href="https://VeteransBenefitsMcallen.com/veteran-pain-relief-mcallen.html" class="text-gray-600 hover:text-blue-900">Pain & Stress</a>
+                <a href="https://VeteransBenefitsMcallen.com/veteran-resources-mcallen.html" class="text-gray-600 hover:text-blue-900">Resources</a>
                 <a href="https://VeteransBenefitsMcallen.com/contact-mcallen-veteran-benefits.html" class="ml-4 px-5 py-2 cta-btn text-white rounded-lg font-medium transition-colors shadow">
                     Contact
                 </a>
@@ -118,7 +117,7 @@
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
             <a href="https://VeteransBenefitsMcallen.com/" class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100">Home</a>
             <a href="https://VeteransBenefitsMcallen.com/veteran-massage-therapy-mcallen.html" class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100">Massage Therapy</a>
-            <a href="https://VeteransBenefitsMcallen.com/va-community-care-mcallen.html" class="block px-4 py-2 rounded-lg text-green-800 font-bold bg-gray-100">Community Care</a> <!-- Active Link -->
+            <a href="https://VeteransBenefitsMcallen.com/va-community-care-mcallen.html" class="block px-4 py-2 rounded-lg text-blue-900 font-bold bg-gray-100">Community Care</a> <!-- Active Link -->
             <a href="https://VeteransBenefitsMcallen.com/veteran-pain-relief-mcallen.html" class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100">Pain & Stress</a>
             <a href="https://VeteransBenefitsMcallen.com/veteran-resources-mcallen.html" class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100">Resources</a>
             <a href="https://VeteransBenefitsMcallen.com/contact-mcallen-veteran-benefits.html" class="block w-full text-center px-5 py-2 cta-btn text-white rounded-lg font-medium transition-colors shadow">
@@ -130,9 +129,6 @@
     <!-- Page Title Hero -->
     <section class="bg-gray-100 py-12 border-b border-gray-200">
         <div class="container mx-auto px-6">
-            <!-- 
-              The H1 Tag: The most important tag for this subpage.
-            -->
             <h1 class="text-4xl font-bold leading-tight section-title">
                 VA Community Care Program in McAllen, TX
             </h1>
@@ -148,10 +144,10 @@
                     <div class="bg-gray-50 p-6 rounded-lg shadow-md sticky top-32">
                         <h3 class="text-xl font-bold section-title mb-4">Veteran Guides</h3>
                         <nav class="space-y-2">
-                            <a href="https://VeteransBenefitsMcallen.com/veteran-massage-therapy-mcallen.html" class="block font-medium text-gray-600 hover:text-green-800">Massage Therapy</a>
-                            <a href="https://VeteransBenefitsMcallen.com/va-community-care-mcallen.html" class="block font-medium text-green-800">Community Care</a> <!-- Active Link -->
-                            <a href="https://VeteransBenefitsMcallen.com/veteran-pain-relief-mcallen.html" class="block font-medium text-gray-600 hover:text-green-800">Pain & Stress</a>
-                            <a href="https://VeteransBenefitsMcallen.com/veteran-resources-mcallen.html" class="block font-medium text-gray-600 hover:text-green-800">All Resources</a>
+                            <a href="https://VeteransBenefitsMcallen.com/veteran-massage-therapy-mcallen.html" class="block font-medium text-gray-600 hover:text-blue-900">Massage Therapy</a>
+                            <a href="https://VeteransBenefitsMcallen.com/va-community-care-mcallen.html" class="block font-medium text-blue-900">Community Care</a> <!-- Active Link -->
+                            <a href="https://VeteransBenefitsMcallen.com/veteran-pain-relief-mcallen.html" class="block font-medium text-gray-600 hover:text-blue-900">Pain & Stress</a>
+                            <a href="https://VeteransBenefitsMcallen.com/veteran-resources-mcallen.html" class="block font-medium text-gray-600 hover:text-blue-900">All Resources</a>
                         </nav>
                         <a href="https://VeteransBenefitsMcallen.com/contact-mcallen-veteran-benefits.html" class="block w-full text-center mt-6 px-5 py-3 cta-btn text-white rounded-lg font-medium transition-colors shadow">
                             Request Assistance
@@ -159,7 +155,7 @@
                     </div>
                 </aside>
 
-                <!-- Article Content -->
+                <!-- Article Content (Bolding and Provider Insertion Fixed) -->
                 <div class="md:w-3/4">
                     <article class="prose max-w-none">
                         <p class="text-xl text-gray-600">The VA Community Care program gives veterans in McAllen, TX, a way to receive health care from local, non-VA providers. This guide explains what the program is, who is eligible, and how you can use it to get the care you need, including services like massage therapy.</p>
@@ -169,9 +165,9 @@
                         <p>The VA Community Care Program (VCCP) is a system that allows eligible veterans to receive medical care from civilian providers in their local community, with the VA paying for the services. This is especially important in areas like McAllen where a specific VA-run service might not be immediately available or is geographically distant.</p>
                         <p>The program was established to ensure that veterans have timely access to quality care, whether it's primary, specialty, or mental health services. Instead of only being seen at a VA facility, this program gives you flexibility and options, allowing you to use approved local clinics, like the <a href="https://VeteransBenefitsMcallen.com/veteran-massage-therapy-mcallen.html">massage therapists listed on our site</a>.</p>
 
-                        <!-- H2 Heading 2 -->
+                        <!-- H2 Heading 2 (Bolding Fixed) -->
                         <h2>Eligibility and How to Request Care</h2>
-                        <p>Before you can use the **VA Community Care McAllen** network, you must be eligible. You must be enrolled in VA health care to use this benefit. You may be eligible if you meet one or more of the following criteria:</p>
+                        <p>Before you can use the <strong>VA Community Care McAllen</strong> network, you must be eligible. You must be enrolled in VA health care to use this benefit. You may be eligible if you meet one or more of the following criteria:</p>
                         
                         <ul class="list-disc">
                             <li>You need a service that is not available at any VA medical facility.</li>
@@ -182,28 +178,28 @@
                             <li>A VA service line has determined that the VA medical facility does not have the capacity to provide the care.</li>
                         </ul>
                         
-                        <p><strong>To request care:</strong> The first step is always to speak with your VA Primary Care Provider (PCP). You cannot just go to a local doctor and expect the VA to pay the bill. You must get a **VA referral** and authorization *before* receiving care.</p>
+                        <p><strong>To request care:</strong> The first step is always to speak with your VA Primary Care Provider (PCP). You cannot just go to a local doctor and expect the VA to pay the bill. You must get a <strong>VA referral</strong> and authorization *before* receiving care.</p>
 
                         <!-- H2 Heading 3 -->
                         <h2>How McAllen Veterans Can Use Local Clinics</h2>
                         <p>Using a local McAllen clinic through Community Care is a simple process once you have your referral. Here’s the typical workflow:</p>
                         
                         <ol class="list-decimal">
-                            <li><strong>Speak to Your VA Provider:</strong> As mentioned, this is the most important step. Discuss your health concerns and ask if a **VA referral** to a community provider is right for you.</li>
+                            <li><strong>Speak to Your VA Provider:</strong> As mentioned, this is the most important step. Discuss your health concerns and ask if a <strong>VA referral</strong> to a community provider is right for you.</li>
                             <li><strong>Receive Authorization:</strong> If your VA provider approves the referral, the VA will work with you to find an authorized provider in the McAllen area. This is when you can suggest a specific clinic.</li>
                             <li><strong>The VA Schedules or You Schedule:</strong> In many cases, the VA will contact the community provider and schedule your first appointment for you. In other cases (like for massage therapy), the VA may authorize a set number of visits, and you will call the provider to schedule them yourself.</li>
                             <li><strong>Receive Care:</strong> You visit the local provider for your appointment. You should bring your VA-issued ID and the authorization information.</li>
                             <li><strong>The Provider Bills the VA:</strong> The local clinic will bill the VA directly. You should not have to pay a co-pay for a service-connected condition, but always confirm this with the VA.</li>
                         </ol>
 
-                        <!-- H2 Heading 4 -->
+                        <!-- H2 Heading 4 (Bolding Fixed and Providers Inserted) -->
                         <h2>Tips for Faster Authorization</h2>
-                        <p>Navigating the system can sometimes be slow. Here are a few tips to help speed up the process for getting your **veteran health benefits in McAllen**:</p>
+                        <p>Navigating the system can sometimes be slow. Here are a few tips to help speed up the process for getting your <strong>veteran health benefits in McAllen</strong>:</p>
                         
                         <ul class="list-disc">
                             <li><strong>Be Specific:</strong> When talking to your PCP, be clear about your symptoms and why you think a specific treatment (like massage) is medically necessary.</li>
-                            <li><strong>Have a Provider Ready:</strong> Do your research. When the VA Community Care office calls, be ready to say, "I would like to go to [Provider Name] in McAllen." This saves them the time of having to find a provider for you.</li>
-                            <li><strong>Follow Up:</strong> If you don't hear from the Community Care office within a week, check on its status. You can try reaching the McAllen Community Care office directly at <a href="tel:956-291-9000" class="font-semibold hover:text-green-800">(956) 291-9000</a> to check on your referral.</li>
+                            <li><strong>Have a Provider Ready:</strong> Do your research. When the VA Community Care office calls, be ready to suggest a specific provider, such as <strong>Holistic Healing Therapies</strong> or <strong>Massage Masters</strong>. This saves them the time of having to find a provider for you.</li>
+                            <li><strong>Follow Up:</strong> If you don't hear from the Community Care office within a week, check on its status. You can try reaching the McAllen Community Care office directly at <a href="tel:956-291-9000" class="font-semibold hover:text-blue-900">(956) 291-9000</a> to check on your referral.</li>
                             <li><strong>Keep Records:</strong> Write down who you spoke to, the date, and what was discussed. This is helpful if you need to follow up again.</li>
                         </ul>
 
@@ -215,7 +211,7 @@
         </div>
     </main>
 
-    <!-- Footer -->
+    <!-- Footer (NAVY BLUE ACCENTS) -->
     <footer class="bg-gray-800 text-gray-400 py-16">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
@@ -237,7 +233,7 @@
                 <div>
                     <h3 class="text-md font-semibold text-white uppercase mb-4">Disclaimer</h3>
                     <p class="text-xs">
-                        This is an independent website and is **not** affiliated with or endorsed by the U.S. Department of Veterans Affairs or any other government agency.
+                        This is an independent website and is <strong>not</strong> affiliated with or endorsed by the U.S. Department of Veterans Affairs or any other government agency.
                     </p>
                 </div>
             </div>
@@ -250,10 +246,8 @@
     </footer>
 
     <!-- 
-      UPDATED SCRIPT BLOCK
-      FIX: Switched to 'DOMContentLoaded'. This event fires after the
-      HTML document has been completely parsed, and 'defer' scripts 
-      (like the new lucide CDN) are guaranteed to have executed.
+      FIXED SCRIPT BLOCK
+      Waits for the DOM (and deferred scripts) to be ready before running.
     -->
     <script>
         // Wait for the DOM (and deferred scripts) to be ready

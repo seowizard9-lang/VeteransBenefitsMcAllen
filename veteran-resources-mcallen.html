@@ -4,28 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- 
-      SEO Title: As requested for this subpage.
-    -->
     <title>Veteran Resources in McAllen, TX | Local Organizations & Support</title>
 
-    <!-- 
-      SEO Meta Description: As requested for this subpage.
-    -->
     <meta name="description" content="Find a list of veteran resources in McAllen, TX, including local organizations, support groups, and programs for education, housing, and mental health.">
 
-    <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Load Inter font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- 
-      Load lucide-icons 
-      FIX: Using the 'defer' attribute with a reliable CDN.
-    -->
     <script src="https://cdn.jsdelivr.net/npm/lucide-icons/dist/lucide.min.js"></script>
     
     <style>
@@ -35,7 +23,7 @@
         }
         /* A subtle, professional color scheme */
         .hero-bg {
-            background-color: #064E3B; /* dark green */
+            background-color: #0A2342; /* dark navy */
         }
         .cta-btn {
             background-color: #F59E0B; /* amber-500 */
@@ -44,7 +32,7 @@
             background-color: #D97706; /* amber-600 */
         }
         .section-title {
-            color: #115E59; /* teal-800 */
+            color: #1A5276; /* navy title */
         }
         
         /* Article content styling */
@@ -52,7 +40,7 @@
             font-size: 1.875rem; /* text-3xl */
             line-height: 2.25rem;
             font-weight: 700; 
-            color: #115E59; /* section-title color */
+            color: #1A5276; /* section-title color */
             margin-top: 2.5rem; 
             margin-bottom: 1rem; 
         }
@@ -72,12 +60,12 @@
             margin-bottom: 0.5rem; 
         }
         .prose a { 
-            color: #064E3B; /* hero-bg color */
+            color: #1A5276; /* Updated navy color */
             font-weight: 500;
             text-decoration: underline; 
         }
         .prose a:hover {
-            color: #115E59; /* section-title color */
+            color: #1A5276; /* Updated navy color */
         }
         .prose strong {
             font-weight: 600;
@@ -87,89 +75,64 @@
 </head>
 <body class="bg-gray-50 antialiased">
 
-    <!-- Header -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="https://VeteransBenefitsMcallen.com/" class="text-2xl font-bold text-gray-800">
-                Veterans<span class="text-green-800">Benefits</span>McAllen
+                Veterans<span class="text-[#1A5276]">Benefits</span>McAllen
             </a>
             
-            <!-- Desktop Menu -->
             <div class="hidden md:flex items-center space-x-6">
-                <a href="https://VeteransBenefitsMcallen.com/" class="text-gray-600 hover:text-green-800">Home</a>
-                <a href="https://VeteransBenefitsMcallen.com/veteran-massage-therapy-mcallen.html" class="text-gray-600 hover:text-green-800">Massage Therapy</a>
-                <a href="https://VeteransBenefitsMcallen.com/va-community-care-mcallen.html" class="text-gray-600 hover:text-green-800">Community Care</a>
-                <a href="https://VeteransBenefitsMcallen.com/veteran-pain-relief-mcallen.html" class="text-gray-600 hover:text-green-800">Pain & Stress</a>
-                <a href="https://VeteransBenefitsMcallen.com/veteran-resources-mcallen.html" class="text-green-800 font-bold">Resources</a> <!-- Active Link -->
-                <a href="https://VeteransBenefitsMcallen.com/contact-mcallen-veteran-benefits.html" class="ml-4 px-5 py-2 cta-btn text-white rounded-lg font-medium transition-colors shadow">
-                    Contact
-                </a>
-            </div>
+                <a href="https://VeteransBenefitsMcallen.com/" class="text-gray-600 hover:text-[#1A5276]">Home</a>
+                <a href="https://VeteransBenefitsMcallen.com/veteran-massage-therapy-mcallen.html" class="text-gray-600 hover:text-[#1A5276]">Massage Therapy</a>
+                <a href="https://VeteransBenefitsMcallen.com/va-community-care-mcallen.html" class="text-gray-600 hover:text-[#1A5276]">Community Care</a>
+                <a href="https://VeteransBenefitsMcallen.com/veteran-pain-relief-mcallen.html" class="text-gray-600 hover:text-[#1A5276]">Pain & Stress</a>
+                <a href="https://VeteransBenefitsMcallen.com/veteran-resources-mcallen.html" class="text-[#1A5276] font-bold">Resources</a> </div>
             
-            <!-- Mobile Menu Button -->
             <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100">
                 <svg data-lucide="menu" class="w-6 h-6 text-gray-800"></svg>
             </button>
         </nav>
         
-        <!-- Mobile Menu (Hidden by default) -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
             <a href="https://VeteransBenefitsMcallen.com/" class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100">Home</a>
             <a href="https://VeteransBenefitsMcallen.com/veteran-massage-therapy-mcallen.html" class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100">Massage Therapy</a>
             <a href="https://VeteransBenefitsMcallen.com/va-community-care-mcallen.html" class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100">Community Care</a>
             <a href="https://VeteransBenefitsMcallen.com/veteran-pain-relief-mcallen.html" class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100">Pain & Stress</a>
-            <a href="https://VeteransBenefitsMcallen.com/veteran-resources-mcallen.html" class="block px-4 py-2 rounded-lg text-green-800 font-bold bg-gray-100">Resources</a> <!-- Active Link -->
-            <a href="https://VeteransBenefitsMcallen.com/contact-mcallen-veteran-benefits.html" class="block w-full text-center px-5 py-2 cta-btn text-white rounded-lg font-medium transition-colors shadow">
-                Contact
-            </a>
-        </div>
+            <a href="https://VeteransBenefitsMcallen.com/veteran-resources-mcallen.html" class="block px-4 py-2 rounded-lg text-[#1A5276] font-bold bg-gray-100">Resources</a> </div>
     </header>
 
-    <!-- Page Title Hero -->
     <section class="bg-gray-100 py-12 border-b border-gray-200">
         <div class="container mx-auto px-6">
-            <!-- 
-              The H1 Tag: The most important tag for this subpage.
-            -->
             <h1 class="text-4xl font-bold leading-tight section-title">
                 Veteran Resources & Support in McAllen, TX
             </h1>
         </div>
     </section>
 
-    <!-- Main Content -->
     <main class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row-reverse gap-12">
-                <!-- Sidebar -->
                 <aside class="md:w-1/4">
                     <div class="bg-gray-50 p-6 rounded-lg shadow-md sticky top-32">
                         <h3 class="text-xl font-bold section-title mb-4">Veteran Guides</h3>
                         <nav class="space-y-2">
-                            <a href="https://VeteransBenefitsMcallen.com/veteran-massage-therapy-mcallen.html" class="block font-medium text-gray-600 hover:text-green-800">Massage Therapy</a>
-                            <a href="https://VeteransBenefitsMcallen.com/va-community-care-mcallen.html" class="block font-medium text-gray-600 hover:text-green-800">Community Care</a>
-                            <a href="https://VeteransBenefitsMcallen.com/veteran-pain-relief-mcallen.html" class="block font-medium text-gray-600 hover:text-green-800">Pain & Stress</a>
-                            <a href="https://VeteransBenefitsMcallen.com/veteran-resources-mcallen.html" class="block font-medium text-green-800">All Resources</a> <!-- Active Link -->
-                        </nav>
-                        <a href="https://VeteransBenefitsMcallen.com/contact-mcallen-veteran-benefits.html" class="block w-full text-center mt-6 px-5 py-3 cta-btn text-white rounded-lg font-medium transition-colors shadow">
-                            Request Assistance
-                        </a>
+                            <a href="https://VeteransBenefitsMcallen.com/veteran-massage-therapy-mcallen.html" class="block font-medium text-gray-600 hover:text-[#1A5276]">Massage Therapy</a>
+                            <a href="https://VeteransBenefitsMcallen.com/va-community-care-mcallen.html" class="block font-medium text-gray-600 hover:text-[#1A5276]">Community Care</a>
+                            <a href="https://VeteransBenefitsMcallen.com/veteran-pain-relief-mcallen.html" class="block font-medium text-gray-600 hover:text-[#1A5276]">Pain & Stress</a>
+                            <a href="https://VeteransBenefitsMcallen.com/veteran-resources-mcallen.html" class="block font-medium text-[#1A5276]">All Resources</a> </nav>
                     </div>
                 </aside>
 
-                <!-- Article Content -->
                 <div class="md:w-3/4">
                     <article class="prose max-w-none">
-                        <p class="text-xl text-gray-600">While healthcare benefits are vital, a strong community support system is just as important. This page is a directory of **veteran resources in McAllen, TX**, and the surrounding Rio Grande Valley area. Find local organizations, support groups, and programs to help you thrive.</p>
+                        <p class="text-xl text-gray-600">While healthcare benefits are vital, a strong community support system is just as important. This page is a directory of <strong>veteran resources in McAllen, TX</strong>, and the surrounding Rio Grande Valley area. Find local organizations, support groups, and programs to help you thrive.</p>
                         
-                        <!-- H2 Heading 1 (UPDATED) -->
                         <h2>Local Organizations Supporting McAllen Veterans</h2>
                         <p>Several non-profit and government-adjacent organizations in McAllen are dedicated to serving the veteran population. These groups can offer everything from camaraderie to direct financial assistance.</p>
                         <p>We recommend searching for local VFW posts, American Legion chapters, and other McAllen-based veteran non-profits to find groups that fit your needs. Many local churches and community centers also offer veteran-specific programs.</p>
 
-                        <!-- H2 Heading 2 -->
                         <h2>Education, Housing, and Employment Programs</h2>
-                        <p>Transitioning to civilian life or finding new opportunities can be challenging. These **veteran organizations in McAllen** specialize in providing a stable foundation for you and your family.</p>
+                        <p>Transitioning to civilian life or finding new opportunities can be challenging. These <strong>veteran organizations in McAllen</strong> specialize in providing a stable foundation for you and your family.</p>
                         
                         <h3>Education</h3>
                         <p>Information on local colleges with strong veteran programs, GI Bill assistance, and vocational training schools in the McAllen area.</p>
@@ -180,19 +143,15 @@
                         <h3>Employment</h3>
                         <p>Programs dedicated to helping veterans find meaningful employment, including resume-building workshops, job fairs, and connections to veteran-friendly employers in McAllen.</p>
 
-                        <!-- H2 Heading 3 (UPDATED) -->
                         <h2>Mental Health and Community Outreach</h2>
                         <p>You are not alone. Resources are available in McAllen to provide mental health support and a strong sense of community. We strongly encourage you to contact the <strong>McAllen Vet Center</strong> for confidential counseling and support. Additionally, searching for local <strong>veteran support groups in McAllen</strong> can connect you with peer-to-peer communities.</p>
                         <p>Remember, the Veterans Crisis Line is available 24/7 by dialing 988 and then pressing 1.</p>
                         
                         <p>In addition to these resources, remember that services like <a href="https://VeteransBenefitsMcallen.com/veteran-massage-therapy-mcallen.html">massage therapy</a> can be a powerful tool for managing the physical symptoms of stress and anxiety. We also have a guide for <a href="https://VeteransBenefitsMcallen.com/veteran-pain-relief-mcallen.html">pain and stress management</a>.</p>
 
-                        <!-- H2 Heading 4 (UPDATED) -->
                         <h2>How to Get Involved or Volunteer</h2>
                         <p>If you are in a position to help, local veteran organizations are always looking for volunteers to support their mission. Giving back can be a rewarding way to connect with fellow veterans and strengthen your community.</p>
                         <p>We recommend contacting local veteran groups directly to ask about volunteer opportunities.</p>
-                        
-                        <p>If you have questions or know of a resource we missed, please <a href="https://VeteransBenefitsMcallen.com/contact-mcallen-veteran-benefits.html">contact us</a> so we can keep this guide up-to-date for all McAllen veterans.</p>
                         
                     </article>
                 </div>
@@ -200,7 +159,6 @@
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-gray-800 text-gray-400 py-16">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
@@ -213,16 +171,15 @@
                     <nav class="space-y-2">
                         <a href="https://VeteransBenefitsMcallen.com/" class="block text-sm hover:text-white">Home</a>
                         <a href="https://VeteransBenefitsMcallen.com/veteran-massage-therapy-mcallen.html" class="block text-sm hover:text-white">Massage Therapy</a>
-                        <a href="https://VeteransBenefitsMcallen.com/va-community-care-mcallen.html" class="block text-sm hover:text-white">Community Care</a>
+                        <a href="httpsia://VeteransBenefitsMcallen.com/va-community-care-mcallen.html" class="block text-sm hover:text-white">Community Care</a>
                         <a href="https://VeteransBenefitsMcallen.com/veteran-pain-relief-mcallen.html" class="block text-sm hover:text-white">Pain & Stress</a>
                         <a href="https://VeteransBenefitsMcallen.com/veteran-resources-mcallen.html" class="block text-sm hover:text-white">All Resources</a>
-                        <a href="https://VeteransBenefitsMcallen.com/contact-mcallen-veteran-benefits.html" class="block text-sm hover:text-white">Contact</a>
                     </nav>
                 </div>
                 <div>
                     <h3 class="text-md font-semibold text-white uppercase mb-4">Disclaimer</h3>
                     <p class="text-xs">
-                        This is an independent website and is **not** affiliated with or endorsed by the U.S. Department of Veterans Affairs or any other government agency.
+                        This is an independent website and is <strong>not</strong> affiliated with or endorsed by the U.S. Department of Veterans Affairs or any other government agency.
                     </p>
                 </div>
             </div>
@@ -234,10 +191,6 @@
         </div>
     </footer>
 
-    <!-- 
-      FIXED SCRIPT BLOCK
-      Waits for the DOM (and deferred scripts) to be ready before running.
-    -->
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             

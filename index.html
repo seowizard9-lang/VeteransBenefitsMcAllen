@@ -51,13 +51,39 @@
     <!-- Header -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-gray-800">
+            <a href="index.html" class="text-2xl font-bold text-gray-800">
                 Veterans<span class="text-green-800">Benefits</span>McAllen
             </a>
-            <a href="#providers" class="hidden md:inline-block px-5 py-2 cta-btn text-white rounded-lg font-medium transition-colors shadow">
-                View Local Providers
-            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-green-800">Home</a>
+                <a href="veteran-massage-therapy-mcallen.html" class="text-gray-600 hover:text-green-800">Massage Therapy</a>
+                <a href="va-community-care-mcallen.html" class="text-gray-600 hover:text-green-800">Community Care</a>
+                <a href="veteran-pain-relief-mcallen.html" class="text-gray-600 hover:text-green-800">Pain & Stress</a>
+                <a href="veteran-resources-mcallen.html" class="text-gray-600 hover:text-green-800">Resources</a>
+                <a href="contact-mcallen-veteran-benefits.html" class="ml-4 px-5 py-2 cta-btn text-white rounded-lg font-medium transition-colors shadow">
+                    Contact
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100">
+                <svg data-lucide="menu" class="w-6 h-6 text-gray-800"></svg>
+            </button>
         </nav>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="index.html" class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="veteran-massage-therapy-mcallen.html" class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100">Massage Therapy</a>
+            <a href="va-community-care-mcallen.html" class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100">Community Care</a>
+            <a href="veteran-pain-relief-mcallen.html" class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100">Pain & Stress</a>
+            <a href="veteran-resources-mcallen.html" class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100">Resources</a>
+            <a href="contact-mcallen-veteran-benefits.html" class="block w-full text-center px-5 py-2 cta-btn text-white rounded-lg font-medium transition-colors shadow">
+                Contact
+            </a>
+        </div>
     </header>
 
     <!-- Main Content -->
@@ -66,9 +92,6 @@
         <!-- Hero Section -->
         <section class="hero-bg text-white py-20 md:py-28">
             <div class="container mx-auto px-6 text-center">
-                <!-- 
-                  The H1 Tag: The most important tag for your primary SEO keyword.
-                -->
                 <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
                     Veteran Benefits in McAllen, TX
                 </h1>
@@ -125,17 +148,53 @@
             </div>
         </section>
 
+        <!-- NEW: Explore Guides Section -->
+        <section id="guides" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold section-title mt-2">
+                        Explore Our McAllen Veteran Guides
+                    </h2>
+                    <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+                        In-depth information to help you access all your available benefits.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Guide 1: Massage Therapy -->
+                    <div class="bg-white p-8 rounded-lg shadow-md border-b-4 border-green-800 flex flex-col">
+                        <h3 class="text-xl font-bold mb-3">Massage Therapy for Veterans</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Learn how massage therapy helps with pain, stress, and more, and how to get a referral in McAllen.</p>
+                        <a href="veteran-massage-therapy-mcallen.html" class="font-medium text-green-800 hover:text-green-600">Learn More &rarr;</a>
+                    </div>
+                    <!-- Guide 2: Community Care -->
+                    <div class="bg-white p-8 rounded-lg shadow-md border-b-4 border-green-800 flex flex-col">
+                        <h3 class="text-xl font-bold mb-3">VA Community Care Program</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Understand the VA Community Care program in McAllen, including eligibility and how to use local clinics.</p>
+                        <a href="va-community-care-mcallen.html" class="font-medium text-green-800 hover:text-green-600">Learn More &rarr;</a>
+                    </div>
+                    <!-- Guide 3: Pain & Stress -->
+                    <div class="bg-white p-8 rounded-lg shadow-md border-b-4 border-green-800 flex flex-col">
+                        <h3 class="text-xl font-bold mb-3">Pain Relief & Stress Management</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Explore therapies and strategies for pain relief and stress management available to McAllen veterans.</p>
+                        <a href="veteran-pain-relief-mcallen.html" class="font-medium text-green-800 hover:text-green-600">Learn More &rarr;</a>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                     <a href="veteran-resources-mcallen.html" class="px-8 py-3 cta-btn text-white rounded-lg font-bold text-lg hover:bg-amber-600 transition-colors shadow-lg">
+                        See All Local Resources
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <!-- Massage Benefits Section -->
-        <section id="benefits" class="py-20 bg-gray-50">
+        <section id="benefits" class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center gap-12">
                     <div class="md:w-1/2">
                         <img src="https://placehold.co/600x400/064E3B/ffffff?text=Massage+Therapy" alt="Massage therapy for veterans" class="rounded-lg shadow-xl object-cover w-full h-auto">
                     </div>
                     <div class="md:w-1/2">
-                        <!-- 
-                          The H2 Tag: Targeting your secondary SEO keyword.
-                        -->
                         <h2 class="text-3xl md:text-4xl font-bold section-title mb-6">
                             Massage for Veterans in McAllen
                         </h2>
@@ -175,7 +234,7 @@
         </section>
 
         <!-- Recommended Providers Section -->
-        <section id="providers" class="py-20 bg-white">
+        <section id="providers" class="py-20 bg-gray-50"> <!-- Swapped bg color -->
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold section-title mt-2">
@@ -231,22 +290,51 @@
 
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-400 py-12">
-        <div class="container mx-auto px-6 text-center">
-            <p class="text-lg font-semibold text-white mb-2">VeteransBenefitsMcAllen</p>
-            <p class="text-sm mb-4">Helping McAllen-area vets get the benefits they deserve.</p>
-            <p class="text-xs">
-                &copy; 2025 VeteransBenefitsMcAllen. All Rights Reserved. <br>
-                This is not a government-endorsed site.
-            </WELCOME>
-            </p>
+    <!-- UPDATED Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <p class="text-lg font-semibold text-white mb-2">VeteransBenefitsMcAllen</p>
+                    <p class="text-sm">Helping McAllen-area vets get the benefits they deserve.</p>
+                </div>
+                <div>
+                    <h3 class="text-md font-semibold text-white uppercase mb-4">Quick Links</h3>
+                    <nav class="space-y-2">
+                        <a href="index.html" class="block text-sm hover:text-white">Home</a>
+                        <a href="veteran-massage-therapy-mcallen.html" class="block text-sm hover:text-white">Massage Therapy</a>
+                        <a href="va-community-care-mcallen.html" class="block text-sm hover:text-white">Community Care</a>
+                        <a href="veteran-pain-relief-mcallen.html" class="block text-sm hover:text-white">Pain & Stress</a>
+                        <a href="veteran-resources-mcallen.html" class="block text-sm hover:text-white">All Resources</a>
+                        <a href="contact-mcallen-veteran-benefits.html" class="block text-sm hover:text-white">Contact</a>
+                    </nav>
+                </div>
+                <div>
+                    <h3 class="text-md font-semibold text-white uppercase mb-4">Disclaimer</h3>
+                    <p class="text-xs">
+                        This is an independent website and is **not** affiliated with or endorsed by the U.S. Department of Veterans Affairs or any other government agency.
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-xs">
+                    &copy; 2025 VeteransBenefitsMcAllen. All Rights Reserved.
+                </p>
+            </div>
         </div>
     </footer>
 
+    <!-- UPDATED Script -->
     <script>
         // Initialize lucide icons
         lucide.createIcons();
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
     </script>
 
 </body>
